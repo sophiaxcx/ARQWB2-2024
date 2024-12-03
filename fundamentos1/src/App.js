@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Eventos from './components/Eventos';
+import MeuComponente from './components/MeuComponente';
+import PrimeiroComponente from './components/PrimeiroComponente';
+import Soma from './components/Soma';
+import TemplateExpressions from './components/TemplateExpressions';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='app'>
+    <h1>Fundamentos do react 1</h1>
+    <PrimeiroComponente />
+    {/* Usando TemplateExpressions */}
+    <TemplateExpressions />
+    <MeuComponente />
+    {/* Reaproveitamento */}
+    <Eventos />
+    {/* ativar eventos */}
+    <Soma />
+
+   </div>
   );
 }
 
